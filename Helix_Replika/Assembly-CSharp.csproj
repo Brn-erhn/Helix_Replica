@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/Cylinder_Rotator.cs" />
      <Compile Include="Assets/Scripts/Ball_Physics.cs" />
      <Compile Include="Assets/Scripts/Camera_Controller.cs" />
+     <Compile Include="Assets/Scripts/Cylinder_Rotator.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
