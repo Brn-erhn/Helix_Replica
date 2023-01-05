@@ -22,8 +22,33 @@ public class Ball_Physics : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
 
         BallRB.AddForce(Vector3.up * jumpForce);
+
+        string MaterialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
+        Debug.Log("Material:" +  MaterialName); 
+
+
+        if ( MaterialName == "Safe_Color (Instance)"){
+            // Getting Point
+
+
+        }
+        else if( MaterialName == "Unsafe_Color (Instance)"){
+            // Dead
+
+            Debug.Log("Oyun bitti olm");
+
+
+        }
+        else{
+
+            // Finish - next level
+
+
+
+        }
         
 
     }
 
 }
+ 
