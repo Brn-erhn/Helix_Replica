@@ -21,7 +21,7 @@ public class Ball_Physics : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) {
 
-        BallRB.AddForce(Vector3.up * jumpForce);
+        
 
         string MaterialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
         Debug.Log("Material:" +  MaterialName); 
@@ -29,7 +29,7 @@ public class Ball_Physics : MonoBehaviour
 
         if ( MaterialName == "Safe_Color (Instance)"){
             // Getting Point
-
+            BallRB.AddForce(Vector3.up * jumpForce);
 
         }
         else if( MaterialName == "Unsafe_Color (Instance)"){
