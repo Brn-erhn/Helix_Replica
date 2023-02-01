@@ -8,9 +8,11 @@ public class Ball_Physics : MonoBehaviour
 
     public Rigidbody BallRB;
     public float jumpForce;
+    private GameManager gm;
+
     void Start()
     {
-        
+        gm = GameObject.FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,8 @@ public class Ball_Physics : MonoBehaviour
             // Dead
 
             Debug.Log("Oyun bitti olm");
+           
+            gm.Restart();
 
 
         }
